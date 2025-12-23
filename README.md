@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# shadcn/ui Component Showcase
+
+A learning project showcasing 10 essential shadcn/ui components built with Next.js, Tailwind CSS, and Base UI.
+
+![Next.js](https://img.shields.io/badge/Next.js-16-black)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-cyan)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
+
+## Features
+
+- 10 interactive component demos with explanations
+- Dark/light mode toggle
+- Responsive grid layout
+- Fully accessible components
+
+## Components Showcased
+
+| Component | Description |
+|-----------|-------------|
+| Button | Interactive buttons with multiple variants and sizes |
+| Card | Content container with header, body, and footer |
+| Badge | Status indicators and labels |
+| Alert | Notification messages (info, success, warning, error) |
+| Tabs | Tabbed content organization |
+| Accordion | Expandable/collapsible content sections |
+| Avatar | User profile images with fallbacks |
+| Progress | Progress bars with animations |
+| Switch | Toggle controls for settings |
+| Dialog | Modal windows for forms and confirmations |
+
+## Theme Configuration
+
+| Setting | Value |
+|---------|-------|
+| Style | Maia |
+| Base Color | Zinc |
+| Accent | Cyan |
+| Font | DM Sans |
+| Icons | Phosphor |
+| Radius | None (sharp corners) |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the showcase.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── layout.tsx        # Root layout with theme provider
+│   ├── page.tsx          # Main landing page
+│   └── globals.css       # Theme CSS variables
+├── components/
+│   ├── ui/               # shadcn/ui components
+│   ├── showcase/         # Component demo implementations
+│   ├── header.tsx        # Site header with nav
+│   ├── hero.tsx          # Hero section
+│   ├── footer.tsx        # Site footer
+│   └── component-card.tsx # Demo wrapper component
+└── lib/
+    └── utils.ts          # Utility functions
+```
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [Next.js 16](https://nextjs.org/) - React framework
+- [shadcn/ui](https://ui.shadcn.com/) - Component library
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Phosphor Icons](https://phosphoricons.com/) - Icon library
+- [next-themes](https://github.com/pacocoursey/next-themes) - Theme management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

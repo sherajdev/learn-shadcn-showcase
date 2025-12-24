@@ -1,6 +1,6 @@
 # shadcn/ui Component Showcase
 
-A learning project showcasing 10 essential shadcn/ui components built with Next.js, Tailwind CSS, and Base UI.
+A comprehensive learning project showcasing shadcn/ui components, a full-featured dashboard, and a modern portfolio landing page built with Next.js, Tailwind CSS, and Base UI.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black)
 ![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-cyan)
@@ -27,10 +27,17 @@ A learning project showcasing 10 essential shadcn/ui components built with Next.
   <img src="screenshots/dashboard-ss.png" alt="Dashboard" width="80%">
 </p>
 
+### Portfolio
+
+<p align="center">
+  <img src="screenshots/portfolio-ss.png" alt="Portfolio Landing Page" width="80%">
+</p>
+
 ## Features
 
 - 10 interactive component demos with explanations
 - **Dashboard page** with sidebar, charts, and data tables
+- **Portfolio landing page** with hero, services, projects, testimonials, and contact sections
 - Dark/light mode toggle
 - Responsive grid layout
 - Fully accessible components
@@ -59,6 +66,17 @@ The project includes a fully functional dashboard at `/dashboard` demonstrating:
 - **Area Chart** - Visitor analytics with date range filtering
 - **Data Table** - Sortable, filterable table with pagination
 - **Responsive Layout** - Adapts to mobile, tablet, and desktop
+
+## Portfolio
+
+A modern portfolio landing page at `/portfolio` showcasing:
+
+- **Hero Section** - Gradient title, stats grid (experience, projects, apps), and dual CTAs
+- **Services Section** - 4 service cards highlighting UI/UX design capabilities
+- **Projects Section** - Portfolio grid with 6 project cards and hover overlays
+- **Testimonials Section** - Client testimonials with star ratings and avatars
+- **Contact Section** - Contact form with validation, social links, and contact info
+- **Fully Responsive** - Mobile-first design adapting to all screen sizes
 
 ## Theme Configuration
 
@@ -94,20 +112,24 @@ src/
 │   ├── layout.tsx        # Root layout with theme provider
 │   ├── page.tsx          # Main landing page
 │   ├── globals.css       # Theme CSS variables
-│   └── dashboard/        # Dashboard route
-│       ├── layout.tsx    # Dashboard layout with sidebar
-│       └── page.tsx      # Dashboard page
+│   ├── dashboard/        # Dashboard route
+│   │   ├── layout.tsx    # Dashboard layout with sidebar
+│   │   └── page.tsx      # Dashboard page
+│   └── portfolio/        # Portfolio route
+│       └── page.tsx      # Portfolio landing page
 ├── components/
 │   ├── ui/               # shadcn/ui components
 │   ├── showcase/         # Component demo implementations
 │   ├── dashboard/        # Dashboard-specific components
+│   ├── portfolio/        # Portfolio-specific components
 │   ├── header.tsx        # Site header with nav
 │   ├── hero.tsx          # Hero section
 │   ├── footer.tsx        # Site footer
 │   └── component-card.tsx # Demo wrapper component
 └── lib/
     ├── utils.ts          # Utility functions
-    └── dashboard-data.ts # Mock data for dashboard
+    ├── dashboard-data.ts # Mock data for dashboard
+    └── portfolio-data.tsx # Portfolio content data
 ```
 
 ## Tech Stack
